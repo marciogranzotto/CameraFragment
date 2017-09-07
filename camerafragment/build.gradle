@@ -26,22 +26,22 @@ task wrapper(type: Wrapper) {
 ext {
     bintrayRepo = 'maven'
     bintrayName = 'CameraFragment'
-    orgName = 'florent37'
+    orgName = 'marciogranzotto'
 
-    publishedGroupId = 'com.github.florent37'
+    publishedGroupId = 'com.github.marciogranzotto'
     libraryName = 'CameraFragment'
     artifact = 'camerafragment'
 
     libraryDescription = 'CameraFragment'
 
-    siteUrl = 'https://github.com/florent37/CameraFragment'
-    gitUrl = 'https://github.com/florent37/CameraFragment.git'
+    siteUrl = 'https://github.com/marciogranzotto/CameraFragment'
+    gitUrl = 'https://github.com/marciogranzotto/CameraFragment.git'
 
     libraryVersion = rootProject.ext.libraryVersion
 
-    developerId = 'florent37'
-    developerName = 'Florent Champigny'
-    developerEmail = 'champigny.florent@gmail.com'
+    developerId = 'marciogranzotto'
+    developerName = 'Marcio Granzotto'
+    developerEmail = 'oscensores@gmail.com'
 
     licenseName = 'The Apache Software License, Version 2.0'
     licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
