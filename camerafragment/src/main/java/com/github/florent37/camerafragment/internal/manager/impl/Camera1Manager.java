@@ -167,6 +167,7 @@ public class Camera1Manager extends BaseCameraManager<Integer, SurfaceHolder.Cal
                 camera.takePicture(null, null, new Camera.PictureCallback() {
                     @Override
                     public void onPictureTaken(byte[] bytes, Camera camera) {
+						if (camera != null) camera.startPreview();
                         Camera1Manager.this.onPictureTaken(bytes, camera, callback);
                     }
                 });
@@ -556,7 +557,7 @@ public class Camera1Manager extends BaseCameraManager<Integer, SurfaceHolder.Cal
         return rotate;
     }
 
-    protected void onPictureTaken(final byte[] bytes, Camera camera, final CameraFragmentResultListener callback) {
+    protected void onPictureTaken(final byte[] bytes, final Camera camera, final CameraFragmentResultListener callback) {
         final File pictureFile = outputPath;
         if (pictureFile == null) {
             Log.d(TAG, "Error creating media file, check storage permissions.");
