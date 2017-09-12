@@ -223,11 +223,7 @@ public abstract class BaseAnncaFragment<CameraId> extends Fragment implements Ca
             }
         };
 
-        if (CameraHelper.hasCamera2(getContext())) {
-            cameraController = new Camera2Controller(getContext(), cameraView, configurationProvider);
-        } else {
-            cameraController = new Camera1Controller(getContext(), cameraView, configurationProvider);
-        }
+        cameraController = new Camera1Controller(getContext(), cameraView, configurationProvider);
         cameraController.onCreate(savedInstanceState);
 
         //onProcessBundle

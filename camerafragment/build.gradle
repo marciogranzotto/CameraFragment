@@ -22,7 +22,6 @@ task wrapper(type: Wrapper) {
     gradleVersion = '2.4'
 }
 
-
 ext {
     bintrayRepo = 'maven'
     bintrayName = 'CameraFragment'
